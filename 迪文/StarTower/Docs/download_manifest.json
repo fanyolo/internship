@@ -1,0 +1,47 @@
+[
+  {
+    "file": "13TouchFile.bin",
+    "bytes": 1410,
+    "sha256": "2e3ac6518871afbd6eaff67f1504a56145b834be2d095caacf0fc388232b11e0"
+  },
+  {
+    "file": "14ShowFile.bin",
+    "bytes": 23360,
+    "sha256": "8d695c6c2689f7077839bb4a669a36c47c545bf6abb75eb402eeae67cc032598"
+  },
+  {
+    "file": "22_Config.bin",
+    "bytes": 131072,
+    "sha256": "fa43239bcee7b97ca62f007cc68487560a39e19f74f3dde7486db3f98df8e471"
+  },
+  {
+    "file": "32_Pages.icl",
+    "bytes": 1670184,
+    "sha256": "786423157ad5136d57cad510b2ab0488c1eceaa93b1be0d61d4226ba0edef422"
+  },
+  {
+    "file": "40_Tiles.icl",
+    "bytes": 92492,
+    "sha256": "1c941bc254d35352e1a279c11c27cab5a2638cca0fbb6db50d1c2a3b4cd84e3f"
+  },
+  {
+    "file": "48_HUD.icl",
+    "bytes": 248952,
+    "sha256": "7daee0be8122e60a164052479bbf1e24a09992d9838016434c34afba9d8b2aa4"
+  },
+  {
+    "file": "50_Music.wae",
+    "bytes": 2510848,
+    "sha256": "4b5f6b0ac9e31220e9dcd0d16bee9682174c84f1c2d08624753f42124865a889"
+  },
+  {
+    "file": "T5LCFG.CFG",
+    "bytes": 46,
+    "sha256": "1028da302b6e070acf3ddad82e1b470dd8b57ca7ca04da0948ac0f44c2feb363"
+  },
+  {
+    "file": "T5L51.bin",
+    "bytes": 13336,
+    "sha256": "d102eea6c44257c616bf068dfc948b8cdf494ee0dd407c3f4fe729b2237653f2"
+  }
+]

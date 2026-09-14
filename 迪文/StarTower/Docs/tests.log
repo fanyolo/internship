@@ -1,0 +1,18 @@
+Floor 1 cleared: HP=473 ATK=24 DEF=12 gold=46 kills=4
+Floor 2 cleared: HP=506 ATK=38 DEF=16 gold=112 kills=8
+Floor 3 cleared: HP=626 ATK=47 DEF=30 gold=256 kills=12
+Floor 4 cleared: HP=763 ATK=53 DEF=34 gold=322 kills=16
+Floor 5 cleared: HP=893 ATK=67 DEF=38 gold=420 kills=20
+Floor 6 cleared: HP=1158 ATK=76 DEF=52 gold=598 kills=24
+Floor 7 cleared: HP=1305 ATK=82 DEF=56 gold=696 kills=28
+Floor 8 cleared: HP=1453 ATK=96 DEF=60 gold=820 kills=32
+Floor 9 cleared: HP=1733 ATK=105 DEF=74 gold=1012 kills=36
+Floor 10 cleared: HP=1883 ATK=111 DEF=78 gold=1136 kills=40
+Floor 11 cleared: HP=2033 ATK=125 DEF=82 gold=1288 kills=44
+Floor 12 cleared: HP=2313 ATK=134 DEF=96 gold=1480 kills=48
+Floor 13 cleared: HP=2463 ATK=140 DEF=100 gold=1632 kills=52
+Floor 14 cleared: HP=2613 ATK=154 DEF=104 gold=1784 kills=56
+Floor 15 cleared: HP=1343 ATK=163 DEF=118 gold=2276 kills=61
+PASS: boot/login validation/new confirmation, 15-floor three-map-cycle victory, damage, saves/320 corruption cases, shop, potions, pause, no duplicate loot
+PASS: locked doors/gates, teleport restrictions, sage once, stat cap, lethal refusal, semantic save validation, VP digit mapping, 15 boot frames
+PASS: floor loading/input lock, save-before-home success/failure, audio preference/v2 save rejection, low-HP/direction feedback, music switching/loop/mute/pause

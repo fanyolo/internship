@@ -1,0 +1,10 @@
+{
+  "exporter": "Official DwinPCKits WAE container; PCM refreshed by Tools/build_wae.py (32KHz 16bit)",
+  "wae_sha256": "4b5f6b0ac9e31220e9dcd0d16bee9682174c84f1c2d08624753f42124865a889",
+  "wav_sha256": [
+    "c54687b728e23085d08594efc09698c8af7242937d95d054a2bdb0257517b29f",
+    "07be73183f1edb93802fdbbf943fc6870e898a78ca3f35c274aeeb74949b92b3",
+    "06342ecdd761a92de0228e3d1cf63e3b3f180f6c99c1805040d54ff1d82b3ebb",
+    "6d0095c47d1ea15689c58caf63f9853b847c1e9670732a75cc830a81f6029276"
+  ]
+}

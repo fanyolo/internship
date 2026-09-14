@@ -1,0 +1,7 @@
+Decoded 32_Pages: 26 images
+Decoded 40_Tiles: 48 images
+Decoded 48_HUD: 88 images
+PASS: DGUS V7.648 native serializer loaded 26 pages / 262 controls.
+PASS: DGUS V7.648 native GetICO decoder decoded 162 images with matching dimensions.
+Hardware rendering / touch / NOR persistence require a real T5L display test.
+

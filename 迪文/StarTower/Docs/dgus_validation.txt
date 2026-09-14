@@ -1,0 +1,3 @@
+PASS: DGUS V7.648 native serializer loaded 26 pages / 262 controls.
+PASS: DGUS V7.648 native GetICO decoder decoded 162 images with matching dimensions.
+Hardware rendering / touch / NOR persistence require a real T5L display test.

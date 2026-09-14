@@ -1,0 +1,38 @@
+[
+  {
+    "file": "32_Pages.icl",
+    "images": 26,
+    "bytes": 1670184,
+    "font_start": 32,
+    "font_end": 38,
+    "max_image_bytes": 82186,
+    "quality": 90,
+    "sampling": "4:4:4",
+    "crc": "MODBUS little-endian",
+    "roundtrip": "PASS"
+  },
+  {
+    "file": "40_Tiles.icl",
+    "images": 48,
+    "bytes": 92492,
+    "font_start": 40,
+    "font_end": 40,
+    "max_image_bytes": 5850,
+    "quality": 90,
+    "sampling": "4:4:4",
+    "crc": "MODBUS little-endian",
+    "roundtrip": "PASS"
+  },
+  {
+    "file": "48_HUD.icl",
+    "images": 88,
+    "bytes": 248952,
+    "font_start": 48,
+    "font_end": 48,
+    "max_image_bytes": 37598,
+    "quality": 90,
+    "sampling": "4:4:4",
+    "crc": "MODBUS little-endian",
+    "roundtrip": "PASS"
+  }
+]

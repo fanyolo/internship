@@ -1,0 +1,59 @@
+C51 COMPILER V9.54   VIEW                                                                  09/08/2026 18:55:26 PAGE 1   
+
+
+C51 COMPILER V9.54, COMPILATION OF MODULE VIEW
+OBJECT MODULE PLACED IN ..\OBJ\view.obj
+COMPILER INVOKED BY: D:\keil5\C51\BIN\C51.exe view.c LARGE OPTIMIZE(3) OBJECT(..\OBJ\view.obj) PRINT(..\OBJ\view.lst)
+
+line level    source
+
+   1          #include "view.h"
+   2          static U16 digit(U16 n,U8 place,U8 count){U8 i;U16 div=1;if(place>=count)return 0;for(i=place+1;i<count;i+
+             -+)div*=10;return (n/div)%10;}
+   3          static U8 login_digit(U32 n,U8 place,U8 count){U8 i;U32 div=1;if(place>=count)return 0;for(i=place+1;i<cou
+             -nt;i++)div*=10;return (U8)((n/div)%10);}
+   4          U8 tower_page(void){return g.page==P_BOOT?(U8)(11+g.boot_tick/4):g.page;}
+   5          U16 tower_vp(U16 vp){
+   6   1       U16 value=0;U8 index=(U8)(vp&15),count=4;
+   7   1       if(vp>=0x2000&&vp<0x2079)return tower_render((U8)(vp-0x2000));
+   8   1       if(vp==0x1300)return g.message;
+   9   1       if(vp==0x1310)return g.book_index;
+  10   1       if(vp==0x1320)return g.return_page==P_MENU?0:1;
+  11   1       if(vp==0x1330)return g.audio_level;
+  12   1       if(vp==0x1340)return g.hp<=120&&((g.ticks/6)&1)?1:0;
+  13   1       if(vp>=0x1350&&vp<=0x1353)return (g.key_flash&&g.last_key==K_UP+vp-0x1350)?1:0;
+  14   1       if(vp>=0x1360&&vp<=0x1365)return index<g.login_account_digits?(U16)(login_digit(g.login_account,index,g.l
+             -ogin_account_digits)+1):0;
+  15   1       if(vp>=0x1370&&vp<=0x1375)return index<g.login_password_digits?11:0;
+  16   1       if(vp==0x1380)return g.login_message;
+  17   1       if(vp==0x1170)return g.sword;
+  18   1       if(vp==0x1171)return g.shield;
+  19   1       switch(vp&0xFFF0){
+  20   2        case 0x1100:value=g.hp;break;case 0x1110:value=g.atk;break;case 0x1120:value=g.def;break;case 0x1130:val
+             -ue=g.gold;break;
+  21   2        case 0x1140:value=g.xp;count=3;break;
+  22   2        case 0x1150:if(index>=6)return 0;return digit(g.keys[index/2],index%2,2);
+  23   2        case 0x1160:value=g.potions;count=2;break;
+  24   2        case 0x1190:value=g.floor+1;count=2;break;
+  25   2        case 0x11A0:value=(g.seconds/60)*100+g.seconds%60;break;
+  26   2        case 0x11B0:value=g.kills;count=2;break;case 0x11C0:value=g.steps;break;
+  27   2        case 0x1200:value=monsters[g.book_index].hp;break;case 0x1210:value=monsters[g.book_index].atk;break;
+  28   2        case 0x1220:value=monsters[g.book_index].def;break;case 0x1230:value=monsters[g.book_index].gold;break;
+  29   2        case 0x1240:value=tower_loss(g.book_index);break;default:return 0;
+  30   2       }
+  31   1       return digit(value,index,count);
+  32   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   1332    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----      24
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

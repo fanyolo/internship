@@ -1,0 +1,551 @@
+LX51 LINKER/LOCATER V4.66.41.0                                                          09/08/2026  18:55:27  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.41.0, INVOKED BY:
+D:\KEIL5\C51\BIN\LX51.EXE ..\OBJ\STARTUP_M5.obj, ..\OBJ\main.obj, ..\OBJ\tower.obj, ..\OBJ\levels.obj, ..\OBJ\view.obj, 
+>> ..\OBJ\audio.obj, ..\OBJ\sys.obj TO ..\OBJ\StarTower PRINT (..\OBJ\StarTower.map) REMOVEUNUSED CLASSES (XDATA (X:0X80
+>> 00-X:0XFFFF), HDATA (X:0X8000-X:0XFFFF))
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: LARGE
+
+
+INPUT MODULES INCLUDED:
+  ..\OBJ\STARTUP_M5.obj (STARTUP_M5)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  ..\OBJ\main.obj (MAIN)
+         COMMENT TYPE 1: C51 Compiler
+  ..\OBJ\tower.obj (TOWER)
+         COMMENT TYPE 1: C51 Compiler
+  ..\OBJ\levels.obj (LEVELS)
+         COMMENT TYPE 1: C51 Compiler
+  ..\OBJ\view.obj (VIEW)
+         COMMENT TYPE 1: C51 Compiler
+  ..\OBJ\audio.obj (AUDIO)
+         COMMENT TYPE 1: C51 Compiler
+  ..\OBJ\sys.obj (SYS)
+         COMMENT TYPE 1: C51 Compiler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C?CLDPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C?CLDOPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C?CILDOPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C?CSTPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C?CSTOPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C?IMUL)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C?UIDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C?ILDIX)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C?LMUL)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C?ULDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C?ULCMP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C?LSTXDATA)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C?LSTKXDATA)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C?ICASE)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5\C51\LIB\C51L.LIB (?C?LIMUL)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  ..\OBJ\StarTower (STARTUP_M5)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+X:000000H   X:008000H   X:00FFFFH   000585H   XDATA
+LX51 LINKER/LOCATER V4.66.41.0                                                        09/08/2026  18:55:27  PAGE 2
+
+
+X:000000H   X:008000H   X:00FFFFH             HDATA
+C:000000H   C:000000H   C:00FFFFH   003415H   CODE
+I:000000H   I:000000H   I:0000FFH   000003H   IDATA
+I:000000H   I:000000H   I:00007FH   000008H   DATA
+
+
+MEMORY MAP OF MODULE:  ..\OBJ\StarTower (STARTUP_M5)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000009H   000002H   BYTE   UNIT     IDATA          ?ID?SYS
+00000AH   00000AH   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   000027H   000025H   BYTE   UNIT     CODE           ?PR?SYS_TIMER2_ISR?SYS
+000028H   00002AH   000003H   ---    ---      **GAP**
+00002BH   00002DH   000003H   ---    OFFS..   CODE           ?CO?SYS?0
+00002EH   0000DBH   0000AEH   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+0000DCH   0000F7H   00001CH   BYTE   UNIT     CODE           ?PR?_LOADING?TOWER
+0000F8H   000102H   00000BH   ---    OFFS..   CODE           ?CO?STARTUP_M5?0
+000103H   0005CCH   0004CAH   BYTE   UNIT     CODE           ?PR?_TOWER_TICK?TOWER
+0005CDH   000A2DH   000461H   BYTE   UNIT     CODE           ?PR?_MOVE?TOWER
+000A2EH   000E4EH   000421H   BYTE   UNIT     CODE           ?PR?_TOWER_VP?VIEW
+000E4FH   0011F4H   0003A6H   BYTE   UNIT     CODE           ?PR?_TOWER_SAVE?TOWER
+0011F5H   001518H   000324H   BYTE   UNIT     CODE           ?PR?_TOWER_VALID?TOWER
+001519H   001807H   0002EFH   BYTE   UNIT     CODE           ?C?LIB_CODE
+001808H   001A81H   00027AH   BYTE   UNIT     CODE           ?PR?_TOWER_LOAD?TOWER
+001A82H   001CE7H   000266H   BYTE   UNIT     CODE           ?PR?_LOGIN_INPUT?TOWER
+001CE8H   001EE5H   0001FEH   BYTE   UNIT     CODE           ?CO?LEVELS
+001EE6H   00206BH   000186H   BYTE   UNIT     CODE           ?PR?_RENDER?MAIN
+00206CH   0021E2H   000177H   BYTE   UNIT     CODE           ?PR?_TOWER_LOSS?TOWER
+0021E3H   002344H   000162H   BYTE   UNIT     CODE           ?PR?_SYS_WRITE_VP?SYS
+002345H   0024A1H   00015DH   BYTE   UNIT     CODE           ?PR?_AUDIO_STEP?AUDIO
+0024A2H   0025E1H   000140H   BYTE   UNIT     CODE           ?PR?_SCAN_SAVE?MAIN
+0025E2H   002713H   000132H   BYTE   UNIT     CODE           ?PR?_TOWER_TILE?TOWER
+002714H   00282DH   00011AH   BYTE   UNIT     CODE           ?PR?PERSISTENCE?MAIN
+00282EH   002947H   00011AH   BYTE   UNIT     CODE           ?PR?_SYS_READ_VP?SYS
+002948H   002A44H   0000FDH   BYTE   UNIT     CODE           ?PR?_PURCHASE?TOWER
+002A45H   002B20H   0000DCH   BYTE   UNIT     CODE           ?PR?_FLASH?MAIN
+002B21H   002BC1H   0000A1H   BYTE   UNIT     CODE           ?PR?_TOWER_CRC?TOWER
+002BC2H   002C4DH   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+002C4EH   002CCFH   000082H   BYTE   UNIT     CODE           ?PR?_LOGIN_DIGIT?VIEW
+002CD0H   002D4EH   00007FH   BYTE   UNIT     CODE           ?PR?TOWER_INIT?TOWER
+002D4FH   002DC5H   000077H   BYTE   UNIT     CODE           ?PR?_DIGIT?VIEW
+002DC6H   002E2DH   000068H   BYTE   UNIT     CODE           ?PR?TOWER_NEW?TOWER
+002E2EH   002E92H   000065H   BYTE   UNIT     CODE           ?PR?_AUDIO_INIT?AUDIO
+002E93H   002EF5H   000063H   BYTE   UNIT     CODE           ?PR?MUSIC?MAIN
+002EF6H   002F54H   00005FH   BYTE   UNIT     CODE           ?PR?_CAPADD?TOWER
+002F55H   002FA9H   000055H   BYTE   UNIT     CODE           ?PR?_TRAVEL?TOWER
+002FAAH   002FFEH   000055H   BYTE   UNIT     CODE           ?PR?_PUT?TOWER
+002FFFH   00304CH   00004EH   BYTE   UNIT     CODE           ?CO?MAIN
+00304DH   003097H   00004BH   BYTE   UNIT     CODE           ?PR?_TOWER_RENDER?TOWER
+003098H   0030E1H   00004AH   BYTE   UNIT     CODE           ?PR?_TOWER_SAVED?TOWER
+0030E2H   003129H   000048H   BYTE   UNIT     CODE           ?PR?_TAKE?TOWER
+00312AH   003170H   000047H   BYTE   UNIT     CODE           ?PR?_GET?TOWER
+003171H   0031B6H   000046H   BYTE   UNIT     CODE           ?PR?_TOWER_SAVED_AUDIO?TOWER
+0031B7H   0031F9H   000043H   BYTE   UNIT     CODE           ?PR?_CLEARED?TOWER
+0031FAH   00323BH   000042H   BYTE   UNIT     CODE           ?CO?TOWER
+00323CH   00327CH   000041H   BYTE   UNIT     CODE           ?PR?TOWER_MUSIC_VOLUME?AUDIO
+00327DH   0032B7H   00003BH   BYTE   UNIT     CODE           ?PR?_WORD?MAIN
+LX51 LINKER/LOCATER V4.66.41.0                                                        09/08/2026  18:55:27  PAGE 3
+
+
+0032B8H   0032EEH   000037H   BYTE   UNIT     CODE           ?PR?TOWER_MUSIC_TRACK?AUDIO
+0032EFH   00331EH   000030H   BYTE   UNIT     CODE           ?PR?_SEQUENCE?MAIN
+00331FH   00334DH   00002FH   BYTE   UNIT     CODE           ?PR?_JUMP?MAIN
+00334EH   00337AH   00002DH   BYTE   UNIT     CODE           ?PR?_READWORD?MAIN
+00337BH   0033A3H   000029H   BYTE   UNIT     CODE           ?PR?SYS_CPU_INIT?SYS
+0033A4H   0033C4H   000021H   BYTE   UNIT     CODE           ?PR?_SYS_DELAY_MS?SYS
+0033C5H   0033DEH   00001AH   BYTE   UNIT     CODE           ?PR?TOWER_PAGE?VIEW
+0033DFH   0033F4H   000016H   BYTE   UNIT     CODE           ?PR?SYS_TIMER2_INIT?SYS
+0033F5H   003403H   00000FH   BYTE   UNIT     CODE           ?PR?_MSG?TOWER
+003404H   003410H   00000DH   BYTE   UNIT     CODE           ?C_INITSEG
+003411H   003417H   000007H   BYTE   UNIT     CODE           ?PR?SYS_INIT?SYS
+
+* * * * * * * * * * *  X D A T A   M E M O R Y  * * * * * * * * * * * * *
+008000H   008426H   000427H   BYTE   UNIT     XDATA          ?XD?MAIN
+008427H   008558H   000132H   BYTE   UNIT     XDATA          ?XD?TOWER
+008559H   008584H   00002CH   BYTE   UNIT     XDATA          _XDATA_GROUP_
+
+* * * * * * * * *   R E M O V E D     S E G M E N T S   * * * * * * * *
+   *DEL*:           000052H   BYTE   UNIT     CODE           ?PR?_SYS_DELAY_ABOUT_MS?SYS
+   *DEL*:           000006H   BYTE   UNIT     XDATA          ?XD?_SYS_DELAY_ABOUT_MS?SYS
+   *DEL*:           00002DH   BYTE   UNIT     CODE           ?PR?_SYS_DELAY_ABOUT_US?SYS
+   *DEL*:           000003H   BYTE   UNIT     XDATA          ?XD?_SYS_DELAY_ABOUT_US?SYS
+
+
+
+OVERLAY MAP OF MODULE:   ..\OBJ\StarTower (STARTUP_M5)
+
+
+FUNCTION/MODULE               XDATA_GROUP
+--> CALLED FUNCTION/MODULE    START  STOP
+=========================================
+SYS_TIMER2_ISR/SYS            ----- -----
+
+*** NEW ROOT ****************
+
+?C_C51STARTUP                 ----- -----
+  +--> MAIN/MAIN
+  +--> ?C_INITSEG
+
+MAIN/MAIN                     8559H 855DH
+  +--> SYS_INIT/SYS
+  +--> _SYS_DELAY_MS/SYS
+  +--> TOWER_INIT/TOWER
+  +--> _WORD/MAIN
+  +--> _SCAN_SAVE/MAIN
+  +--> _AUDIO_INIT/AUDIO
+  +--> MUSIC/MAIN
+  +--> TOWER_PAGE/VIEW
+  +--> _JUMP/MAIN
+  +--> _RENDER/MAIN
+  +--> _READWORD/MAIN
+  +--> _TOWER_TICK/TOWER
+  +--> PERSISTENCE/MAIN
+
+SYS_INIT/SYS                  ----- -----
+  +--> SYS_CPU_INIT/SYS
+  +--> SYS_TIMER2_INIT/SYS
+
+SYS_CPU_INIT/SYS              ----- -----
+
+SYS_TIMER2_INIT/SYS           ----- -----
+
+_SYS_DELAY_MS/SYS             8579H 857AH
+
+TOWER_INIT/TOWER              856EH 8572H
+LX51 LINKER/LOCATER V4.66.41.0                                                        09/08/2026  18:55:27  PAGE 4
+
+
+
+_WORD/MAIN                    8566H 856BH
+  +--> _SYS_WRITE_VP/SYS
+
+_SYS_WRITE_VP/SYS             8579H 8580H
+
+_SCAN_SAVE/MAIN               8564H 8569H
+  +--> _FLASH/MAIN
+  +--> _TOWER_VALID/TOWER
+  +--> _SEQUENCE/MAIN
+  +--> _TOWER_SAVED_AUDIO/TOWER
+  +--> _TOWER_LOAD/TOWER
+
+_FLASH/MAIN                   856AH 8578H
+  +--> _SYS_WRITE_VP/SYS
+  +--> _SYS_DELAY_MS/SYS
+  +--> _READWORD/MAIN
+  +--> _SYS_READ_VP/SYS
+
+_READWORD/MAIN                8579H 857CH
+  +--> _SYS_READ_VP/SYS
+
+_SYS_READ_VP/SYS              857DH 8584H
+
+_TOWER_VALID/TOWER            856EH 8574H
+  +--> _GET/TOWER
+  +--> _TOWER_CRC/TOWER
+  +--> ?CO?LEVELS
+
+_GET/TOWER                    8575H 8579H
+
+_TOWER_CRC/TOWER              8575H 857CH
+
+?CO?LEVELS                    ----- -----
+
+_SEQUENCE/MAIN                856AH 856CH
+
+_TOWER_SAVED_AUDIO/TOWER      856EH 8570H
+
+_TOWER_LOAD/TOWER             856AH 856DH
+  +--> _TOWER_VALID/TOWER
+  +--> TOWER_INIT/TOWER
+  +--> _GET/TOWER
+  +--> _TOWER_SAVED_AUDIO/TOWER
+  +--> _MSG/TOWER
+
+_MSG/TOWER                    856EH 856EH
+
+_AUDIO_INIT/AUDIO             855EH 8560H
+
+MUSIC/MAIN                    855EH 8561H
+  +--> _READWORD/MAIN
+  +--> _AUDIO_STEP/AUDIO
+  +--> _SYS_WRITE_VP/SYS
+  +--> _WORD/MAIN
+
+_AUDIO_STEP/AUDIO             8562H 8567H
+  +--> TOWER_MUSIC_TRACK/AUDIO
+  +--> TOWER_MUSIC_VOLUME/AUDIO
+
+TOWER_MUSIC_TRACK/AUDIO       ----- -----
+
+TOWER_MUSIC_VOLUME/AUDIO      8568H 8568H
+
+TOWER_PAGE/VIEW               ----- -----
+LX51 LINKER/LOCATER V4.66.41.0                                                        09/08/2026  18:55:27  PAGE 5
+
+
+
+_JUMP/MAIN                    855EH 8562H
+  +--> _SYS_WRITE_VP/SYS
+
+_RENDER/MAIN                  855EH 8565H
+  +--> _TOWER_VP/VIEW
+  +--> _WORD/MAIN
+  +--> ?CO?MAIN
+
+_TOWER_VP/VIEW                8566H 856BH
+  +--> _TOWER_RENDER/TOWER
+  +--> _LOGIN_DIGIT/VIEW
+  +--> _DIGIT/VIEW
+  +--> ?CO?TOWER
+  +--> _TOWER_LOSS/TOWER
+
+_TOWER_RENDER/TOWER           856CH 856DH
+  +--> _TOWER_TILE/TOWER
+
+_TOWER_TILE/TOWER             856EH 8571H
+  +--> ?CO?LEVELS
+  +--> _CLEARED/TOWER
+
+_CLEARED/TOWER                8572H 8573H
+
+_LOGIN_DIGIT/VIEW             856CH 8576H
+
+_DIGIT/VIEW                   856CH 8572H
+
+?CO?TOWER                     ----- -----
+
+_TOWER_LOSS/TOWER             856CH 8578H
+  +--> ?CO?TOWER
+
+?CO?MAIN                      ----- -----
+
+_TOWER_TICK/TOWER             855EH 855FH
+  +--> _LOGIN_INPUT/TOWER
+  +--> _MSG/TOWER
+  +--> TOWER_NEW/TOWER
+  +--> _PURCHASE/TOWER
+  +--> _CAPADD/TOWER
+  +--> ?CO?LEVELS
+  +--> _TRAVEL/TOWER
+  +--> ?CO?TOWER
+  +--> _TAKE/TOWER
+  +--> _MOVE/TOWER
+
+_LOGIN_INPUT/TOWER            8560H 8562H
+
+TOWER_NEW/TOWER               8560H 8563H
+  +--> TOWER_INIT/TOWER
+  +--> ?CO?LEVELS
+  +--> _MSG/TOWER
+
+_PURCHASE/TOWER               8560H 8563H
+  +--> _MSG/TOWER
+  +--> _CAPADD/TOWER
+
+_CAPADD/TOWER                 8566H 856DH
+
+_TRAVEL/TOWER                 8566H 8567H
+  +--> _MSG/TOWER
+  +--> _LOADING/TOWER
+
+LX51 LINKER/LOCATER V4.66.41.0                                                        09/08/2026  18:55:27  PAGE 6
+
+
+_LOADING/TOWER                8568H 8568H
+
+_TAKE/TOWER                   8566H 8566H
+
+_MOVE/TOWER                   8560H 8565H
+  +--> _TOWER_TILE/TOWER
+  +--> _MSG/TOWER
+  +--> _TAKE/TOWER
+  +--> _TOWER_LOSS/TOWER
+  +--> _CAPADD/TOWER
+  +--> ?CO?LEVELS
+  +--> _TRAVEL/TOWER
+
+PERSISTENCE/MAIN              855EH 8563H
+  +--> _SCAN_SAVE/MAIN
+  +--> _TOWER_SAVE/TOWER
+  +--> _FLASH/MAIN
+  +--> _TOWER_VALID/TOWER
+  +--> _TOWER_SAVED/TOWER
+
+_TOWER_SAVE/TOWER             8564H 856AH
+  +--> _PUT/TOWER
+  +--> _TOWER_CRC/TOWER
+
+_PUT/TOWER                    856BH 8571H
+
+_TOWER_SAVED/TOWER            8564H 8566H
+  +--> _MSG/TOWER
+  +--> _LOADING/TOWER
+
+?C_INITSEG                    ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  ..\OBJ\StarTower (STARTUP_M5)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      0200857DH   XDATA    ---       ?_SYS_READ_VP?BYTE
+      02008579H   XDATA    ---       ?_SYS_WRITE_VP?BYTE
+      0100155FH   CODE     ---       ?C?CILDOPTR
+      01001532H   CODE     ---       ?C?CLDOPTR
+      01001519H   CODE     ---       ?C?CLDPTR
+      00000000H   NUMBER   ---       ?C?CODESEG
+      010015A4H   CODE     ---       ?C?CSTOPTR
+      01001592H   CODE     ---       ?C?CSTPTR
+      010017AEH   CODE     ---       ?C?ICASE
+      0100162DH   CODE     ---       ?C?ILDIX
+      010015C6H   CODE     ---       ?C?IMUL
+      010017DBH   CODE     ---       ?C?LIMUL
+      01001643H   CODE     ---       ?C?LMUL
+      0100177DH   CODE     ---       ?C?LSTKXDATA
+      01001771H   CODE     ---       ?C?LSTXDATA
+      010015D8H   CODE     ---       ?C?UIDIV
+      01001760H   CODE     ---       ?C?ULCMP
+      010016CEH   CODE     ---       ?C?ULDIV
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01002C09H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      01002E2EH   CODE     ---       _AUDIO_INIT
+      01002345H   CODE     ---       _AUDIO_STEP
+*DEL*:00000000H   CODE     ---       _SYS_DELAY_ABOUT_MS
+*DEL*:00000000H   CODE     ---       _SYS_DELAY_ABOUT_US
+      010033A4H   CODE     ---       _SYS_DELAY_MS
+LX51 LINKER/LOCATER V4.66.41.0                                                        09/08/2026  18:55:27  PAGE 7
+
+
+      0100282EH   CODE     ---       _SYS_READ_VP
+      010021E3H   CODE     ---       _SYS_WRITE_VP
+      01002B21H   CODE     ---       _TOWER_CRC
+      01001808H   CODE     ---       _TOWER_LOAD
+      0100206CH   CODE     ---       _TOWER_LOSS
+      0100304DH   CODE     ---       _TOWER_RENDER
+      01000E4FH   CODE     ---       _TOWER_SAVE
+      01003098H   CODE     ---       _TOWER_SAVED
+      01003171H   CODE     ---       _TOWER_SAVED_AUDIO
+      01000103H   CODE     ---       _TOWER_TICK
+      010025E2H   CODE     ---       _TOWER_TILE
+      010011F5H   CODE     ---       _TOWER_VALID
+      01000A2EH   CODE     ---       _TOWER_VP
+      02008427H   XDATA    ---       G
+      01001D7BH   CODE     ---       LEVELS
+      0100002EH   CODE     ---       MAIN
+      010031FAH   CODE     ---       MONSTERS
+      01001CE8H   CODE     ---       ROUTES
+      0100337BH   CODE     ---       SYS_CPU_INIT
+      01003411H   CODE     ---       SYS_INIT
+      010033DFH   CODE     ---       SYS_TIMER2_INIT
+      01000003H   CODE     ---       SYS_TIMER2_ISR
+      01002CD0H   CODE     ---       TOWER_INIT
+      010032B8H   CODE     ---       TOWER_MUSIC_TRACK
+      0100323CH   CODE     ---       TOWER_MUSIC_VOLUME
+      01002DC6H   CODE     ---       TOWER_NEW
+      010033C5H   CODE     ---       TOWER_PAGE
+
+
+
+SYMBOL TABLE OF MODULE:  ..\OBJ\StarTower (STARTUP_M5)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       STARTUP_M5
+
+      ---         MODULE    ---      ---       MAIN
+      0100002EH   PUBLIC    CODE     ---       MAIN
+
+      ---         MODULE    ---      ---       TOWER
+      02008427H   PUBLIC    XDATA    ---       G
+      010031FAH   PUBLIC    CODE     ---       MONSTERS
+      01003098H   PUBLIC    CODE     ---       _TOWER_SAVED
+      01003171H   PUBLIC    CODE     ---       _TOWER_SAVED_AUDIO
+      01001808H   PUBLIC    CODE     ---       _TOWER_LOAD
+      010011F5H   PUBLIC    CODE     ---       _TOWER_VALID
+      01000E4FH   PUBLIC    CODE     ---       _TOWER_SAVE
+      01002B21H   PUBLIC    CODE     ---       _TOWER_CRC
+      0100304DH   PUBLIC    CODE     ---       _TOWER_RENDER
+      01000103H   PUBLIC    CODE     ---       _TOWER_TICK
+      0100206CH   PUBLIC    CODE     ---       _TOWER_LOSS
+      01002DC6H   PUBLIC    CODE     ---       TOWER_NEW
+      01002CD0H   PUBLIC    CODE     ---       TOWER_INIT
+      010025E2H   PUBLIC    CODE     ---       _TOWER_TILE
+
+      ---         MODULE    ---      ---       LEVELS
+      01001D7BH   PUBLIC    CODE     ---       LEVELS
+      01001CE8H   PUBLIC    CODE     ---       ROUTES
+
+      ---         MODULE    ---      ---       VIEW
+      01000A2EH   PUBLIC    CODE     ---       _TOWER_VP
+      010033C5H   PUBLIC    CODE     ---       TOWER_PAGE
+
+      ---         MODULE    ---      ---       AUDIO
+      01002345H   PUBLIC    CODE     ---       _AUDIO_STEP
+LX51 LINKER/LOCATER V4.66.41.0                                                        09/08/2026  18:55:27  PAGE 8
+
+
+      01002E2EH   PUBLIC    CODE     ---       _AUDIO_INIT
+      0100323CH   PUBLIC    CODE     ---       TOWER_MUSIC_VOLUME
+      010032B8H   PUBLIC    CODE     ---       TOWER_MUSIC_TRACK
+
+      ---         MODULE    ---      ---       SYS
+      01000003H   PUBLIC    CODE     ---       SYS_TIMER2_ISR
+      02008579H   PUBLIC    XDATA    ---       ?_SYS_WRITE_VP?BYTE
+      010021E3H   PUBLIC    CODE     ---       _SYS_WRITE_VP
+      0200857DH   PUBLIC    XDATA    ---       ?_SYS_READ_VP?BYTE
+      0100282EH   PUBLIC    CODE     ---       _SYS_READ_VP
+      010033A4H   PUBLIC    CODE     ---       _SYS_DELAY_MS
+      01003411H   PUBLIC    CODE     ---       SYS_INIT
+      010033DFH   PUBLIC    CODE     ---       SYS_TIMER2_INIT
+      0100337BH   PUBLIC    CODE     ---       SYS_CPU_INIT
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C_INIT
+      01002C09H   PUBLIC    CODE     ---       ?C_START
+
+      ---         MODULE    ---      ---       ?C?CLDPTR
+      01001519H   PUBLIC    CODE     ---       ?C?CLDPTR
+
+      ---         MODULE    ---      ---       ?C?CLDOPTR
+      01001532H   PUBLIC    CODE     ---       ?C?CLDOPTR
+
+      ---         MODULE    ---      ---       ?C?CILDOPTR
+      0100155FH   PUBLIC    CODE     ---       ?C?CILDOPTR
+
+      ---         MODULE    ---      ---       ?C?CSTPTR
+      01001592H   PUBLIC    CODE     ---       ?C?CSTPTR
+
+      ---         MODULE    ---      ---       ?C?CSTOPTR
+      010015A4H   PUBLIC    CODE     ---       ?C?CSTOPTR
+
+      ---         MODULE    ---      ---       ?C?IMUL
+      010015C6H   PUBLIC    CODE     ---       ?C?IMUL
+
+      ---         MODULE    ---      ---       ?C?UIDIV
+      010015D8H   PUBLIC    CODE     ---       ?C?UIDIV
+
+      ---         MODULE    ---      ---       ?C?ILDIX
+      0100162DH   PUBLIC    CODE     ---       ?C?ILDIX
+
+      ---         MODULE    ---      ---       ?C?LMUL
+      01001643H   PUBLIC    CODE     ---       ?C?LMUL
+
+      ---         MODULE    ---      ---       ?C?ULDIV
+      010016CEH   PUBLIC    CODE     ---       ?C?ULDIV
+
+      ---         MODULE    ---      ---       ?C?ULCMP
+      01001760H   PUBLIC    CODE     ---       ?C?ULCMP
+
+      ---         MODULE    ---      ---       ?C?LSTXDATA
+      01001771H   PUBLIC    CODE     ---       ?C?LSTXDATA
+
+      ---         MODULE    ---      ---       ?C?LSTKXDATA
+      0100177DH   PUBLIC    CODE     ---       ?C?LSTKXDATA
+
+      ---         MODULE    ---      ---       ?C?ICASE
+      010017AEH   PUBLIC    CODE     ---       ?C?ICASE
+
+      ---         MODULE    ---      ---       ?C?LIMUL
+      010017DBH   PUBLIC    CODE     ---       ?C?LIMUL
+LX51 LINKER/LOCATER V4.66.41.0                                                        09/08/2026  18:55:27  PAGE 9
+
+
+
+Program Size: data=11.0 xdata=1413 const=0 code=13333
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

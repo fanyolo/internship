@@ -1,0 +1,15 @@
+[INIT]
+PICFIX=1
+VARCount=64
+Version=-1
+SCREENDSIZE=480X272
+SPADDRESS=5000
+[IMG]
+00=00_密码输入.bmp
+01=01.bmp
+02=02_密码错误界面 .bmp
+03=03.bmp
+04=04.bmp
+05=05两次密码不一致.bmp
+6=6_新密码设置成功.bmp
+7=7.bmp

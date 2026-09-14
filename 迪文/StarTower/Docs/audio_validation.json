@@ -1,0 +1,38 @@
+{
+  "result": "PASS",
+  "exporter": "Official DwinPCKits WAE container; PCM refreshed by Tools/build_wae.py (32KHz 16bit)",
+  "bytes": 2510848,
+  "font_start": 50,
+  "font_end": 59,
+  "sha256": "4b5f6b0ac9e31220e9dcd0d16bee9682174c84f1c2d08624753f42124865a889",
+  "crc16": "PASS",
+  "source_hashes": "PASS",
+  "pcm_after_official_fade": "PASS",
+  "tracks": [
+    {
+      "id": 0,
+      "offset": 4096,
+      "bytes": 192002,
+      "seconds": 3.0
+    },
+    {
+      "id": 1,
+      "offset": 196608,
+      "bytes": 1024002,
+      "seconds": 16.0
+    },
+    {
+      "id": 2,
+      "offset": 1224704,
+      "bytes": 1024002,
+      "seconds": 16.0
+    },
+    {
+      "id": 3,
+      "offset": 2252800,
+      "bytes": 256002,
+      "seconds": 4.0
+    }
+  ],
+  "hardware_playback": "Not yet tested on a real T5L screen"
+}

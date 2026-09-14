@@ -1,0 +1,70 @@
+[
+  {
+    "id": 0,
+    "title": "星门启程",
+    "file": "00.wav",
+    "seconds": 3.0,
+    "sample_rate": 32000,
+    "channels": 1,
+    "bits": 16,
+    "profile": "EKT043E onboard buzzer",
+    "waveform": "monophonic square wave",
+    "tone_range_hz": [
+      2093,
+      2794
+    ],
+    "peak": 0.95,
+    "rms_dbfs": -2.26
+  },
+  {
+    "id": 1,
+    "title": "星辉回廊",
+    "file": "01.wav",
+    "seconds": 16.0,
+    "sample_rate": 32000,
+    "channels": 1,
+    "bits": 16,
+    "profile": "EKT043E onboard buzzer",
+    "waveform": "monophonic square wave",
+    "tone_range_hz": [
+      2093,
+      2794
+    ],
+    "peak": 0.95,
+    "rms_dbfs": -3.24
+  },
+  {
+    "id": 2,
+    "title": "赤焰王座",
+    "file": "02.wav",
+    "seconds": 16.0,
+    "sample_rate": 32000,
+    "channels": 1,
+    "bits": 16,
+    "profile": "EKT043E onboard buzzer",
+    "waveform": "monophonic square wave",
+    "tone_range_hz": [
+      2093,
+      2794
+    ],
+    "peak": 0.95,
+    "rms_dbfs": -4.71
+  },
+  {
+    "id": 3,
+    "title": "星辉重现",
+    "file": "03.wav",
+    "seconds": 4.0,
+    "sample_rate": 32000,
+    "channels": 1,
+    "bits": 16,
+    "profile": "EKT043E onboard buzzer",
+    "waveform": "monophonic square wave",
+    "tone_range_hz": [
+      2093,
+      2794
+    ],
+    "peak": 0.95,
+    "rms_dbfs": -2.24
+  }
+]

@@ -1,0 +1,2 @@
+PASS: default account/password login, 320-byte v2 alternating save slots, resume latest, corrupted newest slot falls back to previous valid save; save before home, 15-frame loading, audio preference resume, four valid PCM tracks.
+Test files: PC_Preview/test_saves_20260908105818134
